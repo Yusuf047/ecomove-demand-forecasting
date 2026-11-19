@@ -90,4 +90,4 @@ See [data notes](data/README.md).
 
 ## Author
 
-Mohammad Yusuf Mohiuddin — Business Analytics
+Yusuf
