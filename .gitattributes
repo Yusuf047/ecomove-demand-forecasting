@@ -1,0 +1,2 @@
+# Preserve CSV bytes so the recorded dataset checksum is portable.
+*.csv -text whitespace=cr-at-eol

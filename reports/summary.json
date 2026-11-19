@@ -1,0 +1,59 @@
+{
+  "selected_model": "Random forest",
+  "selection_metric": "validation MAE",
+  "audit": {
+    "input_rows": 8734,
+    "invalid_date_hour_or_target": 0,
+    "duplicate_hours": 0,
+    "Temperature_Celsius_missing_or_invalid": 6,
+    "Humidity_Percent_missing_or_invalid": 6,
+    "Wind_Speed_kph_missing_or_invalid": 4,
+    "usable_rows": 8734
+  },
+  "splits": {
+    "train": {
+      "rows": 5246,
+      "start": "2012-01-01",
+      "end": "2012-08-06"
+    },
+    "validation": {
+      "rows": 1752,
+      "start": "2012-08-07",
+      "end": "2012-10-18"
+    },
+    "test": {
+      "rows": 1736,
+      "start": "2012-10-19",
+      "end": "2012-12-31"
+    }
+  },
+  "test_metrics": [
+    {
+      "Model": "Mean baseline",
+      "MAE": 154.47485597980292,
+      "RMSE": 189.32916891142216,
+      "R2": -0.013995761803526685
+    },
+    {
+      "Model": "Ridge regression",
+      "MAE": 118.69002972321876,
+      "RMSE": 181.31820821069815,
+      "R2": 0.06999791933045296
+    },
+    {
+      "Model": "Random forest",
+      "MAE": 63.67415819882203,
+      "RMSE": 91.13751263744308,
+      "R2": 0.7650391926964608
+    }
+  ],
+  "data_sha256": "b88f6fc8ec0d81d037eba62887cd0013baf92528ddc899130cd659e86e90dfbe",
+  "python": "3.14.6",
+  "packages": {
+    "pandas": "3.1.1",
+    "numpy": "2.5.5",
+    "scikit-learn": "1.9.1",
+    "streamlit": "1.67.0",
+    "plotly": "7.1.0"
+  }
+}
